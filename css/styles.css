@@ -156,5 +156,30 @@ nav a:hover {
 #right_panel_resume {
     height: 100%;
     width: 100%;
+
+}
+
+#right_panel_projects {
+    height: 100%;
+    width: 100%;
     
+}
+
+#right_panel_contact {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#contactform {
+    display: flex;
+    flex-direction: column;
+}
+
+.shortform {
+    flex-grow: 1;
+}
+
+.largeform {
+    flex-grow: 2;
 }

@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>James Richardson: Software Engineer and IT Expert</title>
 </head>
 <body>
-    
+    <section id=main_flex>
+        <section id="left_panel">
+            <img src="img/Headshot.jpeg" alt="James Richardson Headshot" id="headshot" />
+            <nav id="websitenav">
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">My Projects</a></li>
+                    <li><a href="fullresume.html">Full Resume</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div id="findme">
+                <ul id="social_icons">
+                    <li><a href="https://www.github.com/jamesdrichardson"><img class="logo"
+                                src="img/github-mark.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/james-richardson-professional/"><img class="logo"
+                                src="img/LI-In-Bug.png"></a></li>
+                </ul>
+            </div>
+        </section>
+        <main id="right_panel_contact">
+            <h1>Contact Me!</h1>
+            <form id= "contactform"action="mailto:jdr@jamesdrichardson.dev" method="post">
+                <label class = "shortform" for="fullName">Name: </label>
+                <input class = "shortform" name="fullName" type="text" />
+
+                <label class = "shortform" for="email">Email Address: </label>
+                <input class = "shortform" name="email" type="email" />
+
+                <label class = "shortform" for="reason">Reason for Contact:</label>
+                <select class = "shortform" id="reason" name="reason">
+                    <option value="" selected>--Please choose an option--</option>
+                    <option value="website">Website Development</option>
+                    <option value="ithelp">IT Consult</option>
+                    <option value="both">Website Development & IT Consult</option>
+                    <option value="general">General Interest, Questions, and Inquiries</option>
+                </select>
+
+                <label class = "largeform" for="tellmemore">Tell me a little bit more about why you're reaching out:</label>
+                <textarea class = "largeform" id="tellmemore" name="tellmemore" rows="10" cols="50"></textarea>
+
+                <label class = "shortform" for="submit">Submit your contact request</label>
+                <input class = "shortform" name="submit" type="submit">
+            </form>
+        </main>
+    </section>
+    <footer>
+        <p>Copyright: James Richardson: jdr@jamesdrichardson.dev, 2023 &copy;</p>
+    </footer>
 </body>
 </html>
