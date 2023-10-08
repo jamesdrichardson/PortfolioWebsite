@@ -8,14 +8,15 @@ html {
 }
 
 body {
-    margin-left: 3%;
+    margin-left: 0%;
     margin-right: 3%;
     background-color: rgba(192, 192, 192, 0.1);
+    height: 98vh;
 }
 
 #main_flex {
     display: flex;
-
+    height: 95%;
 }
 
 #right_panel_grid {
@@ -24,12 +25,13 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "name name"
-    "* desc"
+    "desc desc"
     "bio bio"
     "skills edu"
     ;
-    gap: 20px 20px;
-
+    gap: 15px;
+    align-items: center;
+    align-content: space-evenly;
 }
 
 h1 {
@@ -47,12 +49,13 @@ h3 {
 
 #left_panel {
     display: flex;
-    flex-basis: 35%;
     flex-direction: column;
+    padding-right: 5px;
 }
 
 #findme {
     display: flex;
+    justify-content: center;
 }
 
 #social_icons {
@@ -85,7 +88,9 @@ nav {
 }
 
 #headshot {
-    width: 100px;
+    width: 150px;
+    align-self: center;
+    border-radius: 25%;
 }
 
 nav a,
@@ -105,4 +110,51 @@ nav a:hover {
 
 .social-icons li a:hover .fab {
   color: #F2CC65
+}
+
+#name {
+    grid-area: name;
+    font-size: 4em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#desc {
+    grid-area: desc;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: end;
+    font-size: 1.5em;
+}
+
+#bio {
+    grid-area: bio;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#education {
+    grid-area: edu;
+}
+
+#navbar > li {
+    padding: 5px;
+    font-size: 1.45em;
+}
+
+#navbar > li:first-child {
+    padding-top: 20px;
+}
+
+#bio > p , #skills > p , #education > p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#right_panel_resume {
+    height: 100%;
+    width: 100%;
+    
 }
