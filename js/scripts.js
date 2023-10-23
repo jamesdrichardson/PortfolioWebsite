@@ -17,8 +17,14 @@ function createProjectPages(projectInfo){
         const clone = document.importNode(template.content, true);
         
         clone.querySelector('.project-name').innerText = project.name;
-        clone.querySelector('iframe').src = project.projectUrl;
+        clone.querySelector('iframe').src = project.projectURL;
         clone.querySelector('.project-button').addEventListener('click', openUrlInNewTab);
         cardsEl.appendChild(clone);
     }
+}
+
+function openUrlInNewTab(event){
+    const iframeSite = event.target.previousElementSibling;
+    const url = iframeSite.getAttribute('src');
+    const w = window.open(url, "_blank");
 }

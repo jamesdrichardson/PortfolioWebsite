@@ -163,7 +163,7 @@ nav a:hover {
 #right_panel_projects {
     height: 100%;
     width: 100%;
-    
+    overflow-y: scroll;
 }
 
 #right_panel_contact {
