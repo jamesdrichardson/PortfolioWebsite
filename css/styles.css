@@ -13,6 +13,7 @@ body {
     background-color: rgba(192, 192, 192, 0.1);
     height: 98vh;
     background-image: linear-gradient(#EB009F, white);
+    overflow-y: hidden;
 }
 
 #main_flex {
@@ -33,6 +34,8 @@ body {
     gap: 15px;
     align-items: center;
     align-content: space-evenly;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 h1 {
