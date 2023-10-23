@@ -12,6 +12,7 @@ body {
     margin-right: 3%;
     background-color: rgba(192, 192, 192, 0.1);
     height: 98vh;
+    background-image: linear-gradient(#EB009F, white);
 }
 
 #main_flex {
@@ -24,7 +25,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "name name"
+    "name logo"
     "desc desc"
     "bio bio"
     "skills edu"
@@ -100,16 +101,8 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #F2CC65;
+  color: #F9F871;
   padding-left: 5px;
-}
-
-.fab {
-  color: #3A3B00
-}
-
-.social-icons li a:hover .fab {
-  color: #F2CC65
 }
 
 #name {
@@ -137,6 +130,11 @@ nav a:hover {
 
 #education {
     grid-area: edu;
+}
+
+.personal-logo {
+    grid-area: logo;
+    width:50%;
 }
 
 #navbar > li {
@@ -183,3 +181,4 @@ nav a:hover {
 .largeform {
     flex-grow: 2;
 }
+
